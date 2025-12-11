@@ -50,17 +50,18 @@ function getMenuMessagePayload(recipientId) {
         type: 'interactive',
         interactive: {
             type: 'list',
-            header: { type: 'text', text: 'Welcome to Vantage!' },
-            body: { text: 'Reply with the number corresponding to your query:' },
+            header: { type: 'text', text: 'Hello👋 <span> Thank you for contacting Daftarkhwan North.' },
+            body: { text: 'Please select one of the options below so we can guide you better:' },
             action: {
                 button: 'Select an Option',
                 sections: [{
                     title: 'Vantage FAQs',
                     rows: [
-                        { id: '1', title: '1 – Timings' },
-                        { id: '2', title: '2 – Prices' },
-                        { id: '3', title: '3 – Meeting Room Booking' },
-                        { id: '4', title: '4 – Location' }
+                        { id: '1', title: '1 – Service & Pricing Information' },
+                        { id: '2', title: '2 – Book a Visit / Appointment' },
+                        { id: '3', title: '3 – Report an Issue or Submit a Query' },
+                        { id: '4', title: '4 – Membership Details & Queries' }
+                        { id: '5', title: '5 – Talk to a Representative (Next Business Day)' }
                     ]
                 }]
             }
